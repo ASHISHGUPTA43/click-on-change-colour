@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changebackgroundcolor()">change</button>
+    <script>
+        let a=0;
+        let color = ["violet","indigo","blue","green","yellow","orange","red"]
+        function changebackgroundcolor(){
+            document.body.style.backgroundColor = color[a]
+            a=(a+1)%color.length;
+        }
+    </script>
+</body>
+</html>
